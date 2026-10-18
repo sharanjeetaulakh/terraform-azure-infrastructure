@@ -27,7 +27,6 @@ blobs = {
   blob01 = {
     name = "loan-application-sample.pdf"
   storage_container_id = data.azurerm_storage_container.storage_container[each.key].id 
-    storage_container_id = data.azurerm_storage_container.storage_container[each.key].id 
 
     type   = "Block"
     source = "./loan-application-sample.pdf"
