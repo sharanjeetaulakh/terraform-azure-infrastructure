@@ -1,13 +1,13 @@
 module "rgs" {
-  source   = "git::https://github.com/sharanjeetaulakh/terraform-azure-resource-group.git"
-  rgs = var.rgs
+  source = "git::https://github.com/sharanjeetaulakh/terraform-azure-resource-group.git"
+  rgs    = var.rgs
 
 }
 
 module "storage_accounts" {
-  depends_on = [module.rgs]
-  source     = "git::https://github.com/sharanjeetaulakh/terraform-azure-storage-account.git"
- storage_accounts= var.storage_accounts
+  depends_on       = [module.rgs]
+  source           = "git::https://github.com/sharanjeetaulakh/terraform-azure-storage-account.git"
+  storage_accounts = var.storage_accounts
 
 }
 
