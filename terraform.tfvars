@@ -26,11 +26,9 @@ containers = {
 blobs = {
   blob01 = {
     name = "loan-application-sample.pdf"
-<<<<<<< HEAD
   storage_container_id = data.azurerm_storage_container.storage_container[each.key].id 
-=======
     storage_container_id = data.azurerm_storage_container.storage_container[each.key].id 
->>>>>>> 6a76e43 (container-code)
+
     type   = "Block"
     source = "./loan-application-sample.pdf"
   }
