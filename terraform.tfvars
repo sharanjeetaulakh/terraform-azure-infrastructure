@@ -26,10 +26,11 @@ containers = {
 
 blobs = {
   blob01 = {
-    name = "loan-application-sample.pdf"
-    # storage_container_id = data.azurerm_storage_container.storage_container[each.key].id 
-
-    type   = "Block"
-    source = "./loan-application-sample.pdf"
+    name                 = "loan-application-sample.pdf"
+    container_name       = "loan-documents"
+    storage_account_name = "stlmsidndev001"
+    resource_group_name  = "rg-lms-idn-dev-01"
+    type                 = "Block"
+    source               = "./loan-application-sample.pdf"
   }
 }
