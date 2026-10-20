@@ -95,7 +95,7 @@ terraform plan
 
 ### 4. Sample PDF Blob
 
-![Loan Application PDF Blob](screenshots/04-blob.png)
+![Loan Application PDF Blob](screenshots/04-blob-pdf.png)
 
 ## Key Learning Outcomes
 
