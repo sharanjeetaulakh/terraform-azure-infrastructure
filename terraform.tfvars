@@ -17,12 +17,13 @@ storage_accounts = {
 
 containers = {
   container01 = {
-    name = "loan-documents"
-  #  storage_account_id    = data.azurerm_storage_account.storage_account[each.key].id
+    name                  = "loan-documents"
+    storage_account_name  = "stlmsidndev001"
+    resource_group_name   = "rg-lms-idn-dev-01"
     container_access_type = "private"
-
   }
 }
+
 blobs = {
   blob01 = {
     name = "loan-application-sample.pdf"
