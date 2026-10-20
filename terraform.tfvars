@@ -18,7 +18,7 @@ storage_accounts = {
 containers = {
   container01 = {
     name = "loan-documents"
-    # storage_account_id    = data.azurerm_storage_account.storage_account[each.key].id
+   storage_account_id    = data.azurerm_storage_account.storage_account[each.key].id
     container_access_type = "private"
 
   }
@@ -26,7 +26,7 @@ containers = {
 blobs = {
   blob01 = {
     name = "loan-application-sample.pdf"
-    # storage_container_id = data.azurerm_storage_container.storage_container[each.key].id 
+    storage_container_id = data.azurerm_storage_container.storage_container[each.key].id 
 
     type   = "Block"
     source = "./loan-application-sample.pdf"
