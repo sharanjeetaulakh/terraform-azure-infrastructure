@@ -18,7 +18,7 @@ storage_accounts = {
 containers = {
   container01 = {
     name = "loan-documents"
-    #  storage_account_id    = data.azurerm_storage_account.storage_account[each.key].id
+    # storage_account_id    = data.azurerm_storage_account.storage_account[each.key].id
     container_access_type = "private"
 
   }
