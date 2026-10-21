@@ -34,3 +34,4 @@ blobs = {
     source               = "./loan-application-sample.pdf"
   }
 }
+
