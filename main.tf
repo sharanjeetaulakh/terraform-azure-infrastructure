@@ -1,7 +1,6 @@
 module "rgs" {
   source = "git::https://github.com/sharanjeetaulakh/terraform-azure-resource-group.git"
   rgs    = var.rgs
-
 }
 
 module "storage_accounts" {
